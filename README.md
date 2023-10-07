@@ -31,7 +31,12 @@ cd backend
 npm i
 ```
 
-2. Segundo haga click aqui 👇👇
+2. Segundo ejecuta el servidor
+```bash
+npm start
+```
+
+3. Tercero haga click aqui 👇👇
 
 
 [Swagger](http://localhost:6996/api-doc/#/)       (Click aqui)
