@@ -10,6 +10,12 @@ import AlertaUpdate from './components/alerta_meteorologica/update/update';
 import CiudadRead from './components/ciudad_y_pais/read/read';
 import CiudadCreate from './components/ciudad_y_pais/create/create';
 import CiudadUpdate from './components/ciudad_y_pais/update/update';
+import PronosticoCortoRead from './components/pronostico_corto_plazo/read/read';
+import PronosticoCortoCreate from './components/pronostico_corto_plazo/create/create';
+import PronosticoCortoUpdate from './components/pronostico_corto_plazo/update/update';
+import PronosticoLargoRead from './components/pronostico_largo_plazo/read/read';
+import PronosticoLargoCreate from './components/pronostico_largo_plazo/create/create';
+import PronosticoLargoUpdate from './components/pronostico_largo_plazo/update/update';
 
 function App() {
   return (
@@ -30,6 +36,16 @@ function App() {
             <Route exact path='/ciudadYPais' component={CiudadRead}></Route>
             <Route exact path='/crearCiudad' component={CiudadCreate}></Route>
             <Route exact path='/editarCiudad' component={CiudadUpdate}></Route>
+          </div>
+          <div>
+            <Route exact path='/pronosticoCorto' component={PronosticoCortoRead}></Route>
+            <Route exact path='/creatPronosticoCorto' component={PronosticoCortoCreate}></Route>
+            <Route exact path='/editarPronosticoCorto' component={PronosticoCortoUpdate}></Route>
+          </div>
+          <div>
+            <Route exact path='/pronosticoLargo' component={PronosticoLargoRead}></Route>
+            <Route exact path='/crearPronosticoLargo' component={PronosticoLargoCreate}></Route>
+            <Route exact path='/editarPronosticoLargo' component={PronosticoLargoUpdate}></Route>
           </div>
         </div>
     </Router>
