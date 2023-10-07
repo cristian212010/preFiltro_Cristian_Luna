@@ -5,6 +5,8 @@ import search from '../../assets/search.svg';
 import pronosticoActual from '../../assets/pronosticoActual.svg'
 import city from '../../assets/city.svg';
 import meteor from '../../assets/meteor.svg';
+import sun from '../../assets/sun.svg';
+import rainbow from '../../assets/rainbow.svg';
 import { Link } from 'react-router-dom'
 import './sidebar.css'
 
@@ -59,6 +61,22 @@ const SideBar = () => {
                   <a href="">
                     <img src={meteor} className='bx bx-home-alt icon'></img>
                     <span className="text nav-text">Alerta Meteorologica</span>
+                  </a>
+                </li>
+              </Link>
+              <Link to='/pronosticoCorto'>
+                <li className="nav-link">
+                  <a href="">
+                    <img src={sun} className='bx bx-home-alt icon'></img>
+                    <span className="text nav-text">Pronostico Corto</span>
+                  </a>
+                </li>
+              </Link>
+              <Link to='/pronosticoLargo'>
+                <li className="nav-link">
+                  <a href="">
+                    <img src={rainbow} className='bx bx-home-alt icon'></img>
+                    <span className="text nav-text">Pronostico Largo</span>
                   </a>
                 </li>
               </Link>
